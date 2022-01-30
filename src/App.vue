@@ -1,27 +1,26 @@
 <template>
-  <div id="app">
-    
+  <div >
+    <Headertodo />
+    <Todolist />
+    <Footertodo />
   </div>
 </template>
 
 <script>
-
+import Headertodo from "./components/Headertodo";
+import Todolist from "./components/Todolist";
+import Footertodo from "./components/Footertodo";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-   
-  }
-}
+    Headertodo,
+    Todolist,
+    Footertodo,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scpoed lang="less">
+
 </style>
